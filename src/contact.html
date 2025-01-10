@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portifolio</title>
+    <title>Personal Portifolio-contact</title>
+    <link rel="stylesheet" href="./style/contact.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
@@ -11,17 +12,19 @@
     <header>
         <nav class="navigate">
             <div class="name-container">
-               <img class="logo-1" src="/src/images/logo1.png" alt="logo">
+                <img class="logo-1" src="./images/logo1.png" alt="nahom zenebe logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#home-page">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Project</a></li>
-            
-                <li><a href="#service">service</a></li>
-                <li class="contact-list-btn"><a href="#contact-me">contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../src/about.html">About</a></li>
+                <li><a href="../src/project.html">Project</a></li>
+                <li><a href="../src/service.html">service</a></li>
+                <li class="contact-list-btn"><a href="../src/contact.html">contact</a></li>
+               
             </ul>
-         
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
          
         </nav>
         
@@ -42,28 +45,36 @@
                      <div class="icon-list">
                      <ul>
                         <li><i class='bx bxs-phone-call'></i>+251954907558</li>
-                        <li><i class='bx bxl-linkedin-square' style='color:#1172b7'  ></i><a href="www.linkedin.com/in/nahom-zenebe-467a27338">www.linkedin.com/in/nahom-zenebe-467a27338</a></li>
-                        <li><i class='bx bxl-gmail' style='color:#101010'  ></i><a href="nahomzenebe123@gmail.com">nahomzenebe123@gmail.com</a></li>
+                        <li><i class='bx bxl-linkedin-square'   ></i><a href="www.linkedin.com/in/nahom-zenebe-467a27338">www.linkedin.com/in/nahom-zenebe-467a27338</a></li>
+                        <li><i class='bx bxl-gmail'  ></i><a href="nahomzenebe123@gmail.com">nahomzenebe123@gmail.com</a></li>
 
                      </ul>
                     </div>
             </div>
 
-            <div class="contact-form">
-                <label>Name:</label>
-                <input class="input1" type="text" placeholder="enter your name">
-                <label>Email:</label>
-                <input class="input2"  type="text" placeholder="enter your name">
+            <form class="contact-form" id="myForm">
+                <label for="name">Name:</label>
+                <input id="name" class="input1" type="text" placeholder="enter your name">
+                <label for="email">Email:</label>
+                <input id="email" class="input2"  type="text" placeholder="enter your email">
 
-                <label>Message:</label>
-                <textarea  class="input3"  placeholder="enter your name"></textarea>
-                <div class="check-box"><input  type="checkbox" ><p>By clicking you have accepted terms and conditions.</p></div>
-                <button class="submit-btn">Submit</button>
-            
+                <label for="message">Message:</label>
+                <textarea id="message"  class="input3"  placeholder="enter your name"></textarea>
+                <div class="check-box">
+                    <label for="terms-checkbox">
+                        <input type="checkbox" id="terms-checkbox">
+                        By clicking you have accepted terms and conditions.
+                      </label>
+                    </div>
+                    <button class="submit-btn">Submit</button>
                 
 
 
-            </div>
+            </form>
+
+    <p id="successMessage" style="display:none; color: green;">Form submitted successfully!</p>
+    <p id="errorMessage" style="display:none; color: red;">Please fill out all fields correctly.</p>
+
             
         </div>
 
@@ -79,26 +90,30 @@
 
             <footer id="footer">
                 <div class="footer-container">
-                    <img class="logo-2" src="/src/images/logo1.png" alt="logo">
+                    <img class="logo-2" src="./images/logo1.png" alt="nahom zenebe logo">
                     <p>follow me through different social media platforms and get connectd with me</p>
                     <div class="icons-wrapper">
-                    <i class='bx bxl-github' ></i>
-                    <i class='bx bxl-twitter' style='color:#fdfdfd' ></i>
-                    <i class='bx bxl-linkedin-square' style='color:#fdfdfd' ></i>
-
-                        
+                        <a href="https://github.com/nahom-zenebe" target="_blank" aria-label="GitHub">
+                            <i class="bx bxl-github"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://x.com/ZenebeNahom?t=ISKuQCh_jhprc_mJZCwKoQ&s=35" target="_blank" aria-label="Twitter">
+                            <i class="bx bxl-twitter"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nahom-z-467a27338/" target="_blank" aria-label="LinkedIn">
+                            <i class="bx bxl-linkedin-square"></i> <span class="sr-only"></span>
+                        </a>
                     </div>
                     
                 </div>
                 <div class="btn-info">
                     <p>&copy;2024 NAHOM ZENEBE. Passionate about building innovative web solutions and creating impactful user experiences.</p>
                 </div>
-                <i class='bx bxs-up-arrow-square'></i>
+                <i href="../src/contact.html" class='bx bxs-up-arrow-square'></i>
             </footer>
 
 
 
-
+            <script src="./js/script.js"></script>
 
     
 </body>

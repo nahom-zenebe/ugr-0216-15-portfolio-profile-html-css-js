@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portifolio</title>
+    <title>Personal Portifolio-about-page</title>
+    <link rel="stylesheet" href="./style/about.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
@@ -12,16 +13,19 @@
     <header>
         <nav class="navigate">
             <div class="name-container">
-               <img class="logo-1" src="/src/images/logo1.png" alt="logo">
+               <img class="logo-1" src="./images/logo1.png" alt="nahom zenebe logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#home-page">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Project</a></li>
-            
-                <li><a href="#service">service</a></li>
-                <li class="contact-list-btn"><a href="#contact-me">contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../src/about.html">About</a></li>
+                <li><a href="../src/project.html">Project</a></li>
+                <li><a href="../src/service.html">service</a></li>
+                <li class="contact-list-btn"><a href="../src/contact.html">contact</a></li>
+               
             </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
          
          
         </nav>
@@ -43,8 +47,9 @@
                      <div class="video-wrapper">
                         <article class="video-content1">
                             <video  class="video1" controls>
-                                <source src="/src/video/How_to_Play_Chess.mp4" type="video/mp4">
-                               
+                                <source src="./video/How_to_Play_Chess.mp4" type="video/mp4" loading="lazy">
+                                <track src="./video/How_to_Play_Chess.mp4.vtt" kind="subtitles" srclang="en" label="English">
+                            
                                
                               </video>
                               <h4>Chess Tutorial</h4>
@@ -56,8 +61,9 @@
                         </article>
                         <article class="video-content2" >
                             <video  class="video2" controls>
-                                <source src="/src/video/Cristiano_Ronaldo__-_Legendary_Skills_in.mp4" type="video/mp4">
-                                
+                                <source src="./video/Cristiano_Ronaldo__-_Legendary_Skills_in.mp4" type="video/mp4" loading="lazy">
+                                <track src="./video/Cristiano_Ronaldo__-_Legendary_Skills_in.vtt" kind="subtitles" srclang="en" label="English">
+                            
                                
                               </video>
                               <h4>football video</h4>
@@ -67,8 +73,9 @@
                         
                         <div class="video-content3">
                             <video class="video3" controls>
-                                <source src="/src/video/What_is_Dark_Web_Dark_Web_Explained_in_1min_Intellipaat360p.mp4" type="video/mp4">
-                               
+                                <source src="./video//What_is_Dark_Web_Dark_Web_Explained_in_1min_Intellipaat360p.mp4" type="video/mp4" loading="lazy">
+                                <track src="./video//What_is_Dark_Web_Dark_Web_Explained_in_1min_Intellipaat360p.vtt" kind="subtitles" srclang="en" label="English">
+                                
                                
                               </video>
                               <h4>Tech video</h4>
@@ -81,7 +88,7 @@
                      </div>
                      <div class="audio-wrapper">
                         <audio class="audio-continer" controls>
-                            <source src="/src/audio/music.mp3" type="audio/mpeg">
+                            <source src="./audio/music.mp3" type="audio/mpeg">
                            
                             
                         </audio>
@@ -102,24 +109,28 @@
 
             <footer id="footer">
                 <div class="footer-container">
-                    <img class="logo-2" src="/src/images/logo1.png" alt="logo">
+                    <img class="logo-2" src="./images/logo1.png" alt="nahom zenebe logo">
                     <p>follow me through different social media platforms and get connectd with me</p>
                     <div class="icons-wrapper">
-                    <i class='bx bxl-github' ></i>
-                    <i class='bx bxl-twitter' style='color:#fdfdfd' ></i>
-                    <i class='bx bxl-linkedin-square' style='color:#fdfdfd' ></i>
-
-                        
+                        <a href="https://github.com/nahom-zenebe" target="_blank" aria-label="GitHub">
+                            <i class="bx bxl-github"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://x.com/ZenebeNahom?t=ISKuQCh_jhprc_mJZCwKoQ&s=35" target="_blank" aria-label="Twitter">
+                            <i class="bx bxl-twitter"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nahom-z-467a27338/" target="_blank" aria-label="LinkedIn">
+                            <i class="bx bxl-linkedin-square"></i> <span class="sr-only"></span>
+                        </a>
                     </div>
                     
                 </div>
                 <div class="btn-info">
                     <p>&copy;2024 NAHOM ZENEBE. Passionate about building innovative web solutions and creating impactful user experiences.</p>
                 </div>
-                <i class='bx bxs-up-arrow-square'></i>
+                <i href="../src/about.html" class='bx bxs-up-arrow-square'></i>
             </footer>
 
-
+            <script src="./js/script.js"></script>
     
 </body>
 </html>

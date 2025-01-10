@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portifolio</title>
+    <title>Personal Portifolio-service-page</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style/service.css"/>
     
 </head>
 <body>
@@ -12,18 +13,21 @@
     <header>
         <nav class="navigate">
             <div class="name-container">
-               <img class="logo-1" src="/src/images/logo1.png" alt="logo">
+               <img class="logo-1" src="./images/logo1.png" alt="nahom zenebe logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#home-page">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Project</a></li>
-            
-                <li><a href="#service">service</a></li>
-                <li class="contact-list-btn"><a href="#contact-me">contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../src/about.html">About</a></li>
+                <li><a href="../src/project.html">Project</a></li>
+                <li><a href="../src/service.html">service</a></li>
+                <li class="contact-list-btn"><a href="../src/contact.html">contact</a></li>
+               
             </ul>
          
-         
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
+            
         </nav>
         
             </header>
@@ -91,6 +95,26 @@
             </div>
         </td>
     </tr>
+    <tr>
+        <td>
+            <div class="progress-wrapper">
+                <div class="circle Typescript" id="Typescript-circle"></div>
+                <div class="circle-inner">Typescript<br>58%</div>
+            </div>
+        </td>
+        <td>
+            <div class="progress-wrapper">
+                <div class="circle Githiub" id="Githiub-circle"></div>
+                <div class="circle-inner">Githiub and git<br>70%</div>
+            </div>
+        </td>
+        <td>
+            <div class="progress-wrapper">
+                <div class="circle Figma" id="Figma-circle"></div>
+                <div class="circle-inner">Figma<br>60%</div>
+            </div>
+        </td>
+    </tr>
 </table>
 
 
@@ -107,26 +131,30 @@
 
             <footer id="footer">
                 <div class="footer-container">
-                    <img class="logo-2" src="/src/images/logo1.png" alt="logo">
+                    <img class="logo-2" src="./images/logo1.png" alt="nahom zenebe logo">
                     <p>follow me through different social media platforms and get connectd with me</p>
                     <div class="icons-wrapper">
-                    <i class='bx bxl-github' ></i>
-                    <i class='bx bxl-twitter' style='color:#fdfdfd' ></i>
-                    <i class='bx bxl-linkedin-square' style='color:#fdfdfd' ></i>
-
-                        
+                        <a href="https://github.com/nahom-zenebe" target="_blank" aria-label="GitHub">
+                            <i class="bx bxl-github"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://x.com/ZenebeNahom?t=ISKuQCh_jhprc_mJZCwKoQ&s=35" target="_blank" aria-label="Twitter">
+                            <i class="bx bxl-twitter"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nahom-z-467a27338/" target="_blank" aria-label="LinkedIn">
+                            <i class="bx bxl-linkedin-square"></i> <span class="sr-only"></span>
+                        </a>
                     </div>
                     
                 </div>
                 <div class="btn-info">
                     <p>&copy;2024 NAHOM ZENEBE. Passionate about building innovative web solutions and creating impactful user experiences.</p>
                 </div>
-                <i class='bx bxs-up-arrow-square'></i>
+                <i href="../src/service.html" class='bx bxs-up-arrow-square'></i>
             </footer>
 
 
 
-
+            <script src="./js/script.js"></script>
 
     
 </body>

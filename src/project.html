@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portifolio</title>
+    <title>Personal Portifolio-project-page</title>
+    <link rel="stylesheet" href="./style/project.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
@@ -12,17 +13,19 @@
     <header>
         <nav class="navigate">
             <div class="name-container">
-               <img class="logo-1" src="/src/images/logo1.png" alt="logo">
+               <img class="logo-1" src="./images/logo1.png" alt="nahom zenebe logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#home-page">Home</a></li>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Project</a></li>
-            
-                <li><a href="#service">service</a></li>
-                <li class="contact-list-btn"><a href="#contact-me">contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../src/about.html">About</a></li>
+                <li><a href="../src/project.html">Project</a></li>
+                <li><a href="../src/service.html">service</a></li>
+                <li class="contact-list-btn"><a href="../src/contact.html">contact</a></li>
+               
             </ul>
-         
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
          
         </nav>
         
@@ -33,53 +36,52 @@
 
             <main>
                 <section id="projects">
-                    <p class="project-title">My Project</p>
+                    <h1 class="project-title">My Project</h1>
                     <figure class="project-wrapper">
+                        <i class='bx bx-left-arrow-circle' id="prev" onclick="moveSlide(-1)"></i>
+                
                         <div class="project1">
-                            <img class="project-img1" src="/src/images/project1.png" alt="image of the project">
+                            <img class="project-img1" loading="lazy" src="./images/project1.png" alt="Amazon clone web application">
                             <h5>Amazon clone</h5>
-                            <p>A full-stack e-commerce web application inspired by Amazon, featuring dynamic product listings, a shopping cart, and secure payment integration. Built with React.js, Node.js, Express, and css for a seamless and responsive user experience. </p>
-            
+                            <p>A full-stack e-commerce web application inspired by Amazon, featuring dynamic product listings, a shopping cart, and secure payment integration. Built with React.js, Node.js, Express, and CSS for a seamless and responsive user experience.</p>
                         </div>
-            
+                
                         <div class="project2">
-                            <img class="project-img2" src="/src/images/project2.png" alt="image of the project">
-                            <h5>sharing platform</h5>
+                            <img class="project-img2" loading="lazy" src="./images/project2.png" alt="Sharing platform web application">
+                            <h5>Sharing platform</h5>
                             <p>A minimalist web application where users can post cards, like and comment on posts, with secure user authentication. Built using Node.js, Express, MySQL, and React for a seamless user experience and robust database management.</p>
-            
                         </div>
-            
+                
                         <div class="project3">
-                            <img class="project-img3" src="/src/images/project3.png" alt="image of the project">
-                            <h5>weather app</h5>
+                            <img class="project-img3" loading="lazy" src="./images/project3.png" alt="Weather app user interface">
+                            <h5>Weather app</h5>
                             <p>A clean and user-friendly weather application built with React. It fetches real-time weather data using an API, allowing users to search for current weather conditions by city. Features include temperature, humidity, wind speed, and a responsive design for all devices.</p>
-            
                         </div>
+                        
                         <div class="project4">
-                            <img class="project-img4" src="/src/images/project4.png" alt="image of the project">
-                            <h5>e-commerce app</h5>
+                            <img class="project-img4" loading="lazy" src="./images/project4.png" alt="E-commerce app user interface">
+                            <h5>E-commerce app</h5>
                             <p>A basic e-commerce application built with React and React Router. It features a product listing page, detailed product view, and a functional cart system where users can add, remove, and view items.</p>
-            
                         </div>
+                        
                         <div class="project5">
-                            <img class="project-img5" src="/src/images/project5.png" alt="image of the project">
-                            <h5>note taking app</h5>
-                            <p>
-            
-                                A note-taking app allows users to create, view, and delete notes through a simple interface. Built using HTML for structure, CSS for styling, and JavaScript for functionality, it enables users to add new notes, display them, and remove them when no longer needed</p>
-            
+                            <img class="project-img5" loading="lazy" src="./images/project5.png" alt="Note-taking app user interface">
+                            <h5>Note taking app</h5>
+                            <p>A note-taking app allows users to create, view, and delete notes through a simple interface. Built using HTML for structure, CSS for styling, and JavaScript for functionality, it enables users to add new notes, display them, and remove them when no longer needed.</p>
                         </div>
+                        
                         <div class="project6">
-                            <img class="project-img6" src="/src/images/project6.png" alt="image of the project">
-                            <h5>vowel counter app</h5>
+                            <img class="project-img6"  src="./images/project6.png" alt="Vowel counter app interface">
+                            <h5>Vowel counter app</h5>
                             <p>A vowel counter is a simple web tool that helps users count the number of vowels (A, E, I, O, U) in a given text. It uses HTML to create the user interface, CSS to style the input area and display, and JavaScript to implement the logic of counting vowels.</p>
-            
                         </div>
-            
+                        
+                        <i class='bx bx-right-arrow-circle' id="next" onclick="moveSlide(1)"></i>
                     </figure>
-            
                 </section>
+                
             </main>
+            
             
 
 
@@ -91,27 +93,31 @@
 
             <footer id="footer">
                 <div class="footer-container">
-                    <img class="logo-2" src="/src/images/logo1.png" alt="logo">
+                    <img class="logo-2" src="./images/logo1.png" alt="nahom zenebe logo">
                     <p>follow me through different social media platforms and get connectd with me</p>
                     <div class="icons-wrapper">
-                    <i class='bx bxl-github' ></i>
-                    <i class='bx bxl-twitter' style='color:#fdfdfd' ></i>
-                    <i class='bx bxl-linkedin-square' style='color:#fdfdfd' ></i>
-
-                        
+                        <a href="https://github.com/nahom-zenebe" target="_blank" aria-label="GitHub">
+                            <i class="bx bxl-github"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://x.com/ZenebeNahom?t=ISKuQCh_jhprc_mJZCwKoQ&s=35" target="_blank" aria-label="Twitter">
+                            <i class="bx bxl-twitter"></i> <span class="sr-only"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nahom-z-467a27338/" target="_blank" aria-label="LinkedIn">
+                            <i class="bx bxl-linkedin-square"></i> <span class="sr-only"></span>
+                        </a>
                     </div>
                     
                 </div>
                 <div class="btn-info">
                     <p>&copy;2024 NAHOM ZENEBE. Passionate about building innovative web solutions and creating impactful user experiences.</p>
                 </div>
-                <i class='bx bxs-up-arrow-square'></i>
+                <i href="../src/project.html" class='bx bxs-up-arrow-square'></i>
             </footer>
 
 
 
 
-
+            <script src="./js/script.js"></script>
     
 </body>
 </html>

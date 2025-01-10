@@ -1,0 +1,1148 @@
+@import url('https://fonts.google.com/share?selection.family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700|Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+
+}
+:root {
+ 
+    --primary-color: #0077cc;
+    --secondary-color: #003366; 
+    --third-color: #005A99; 
+    --fourth-color: #1E90FF; 
+    --fifth-color:#E0F7FF;
+    --sixth-color:#EAF6FF;
+    --additional-color:#ffffff;
+
+    
+}
+
+
+
+
+
+
+
+.navigate{
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+
+    
+   
+   
+}
+
+.logo-1{
+    width: 230px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+   
+}
+.bx.bx-menu{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 2rem;
+    visibility: hidden;
+    
+}
+.nav-links >li{
+    list-style: none;
+    padding-left: 50px;
+    margin-right: 30px;
+}
+.nav-links>li a{
+    text-decoration: none;
+    color: var(--additional-color);
+    font-size: 1.1rem;
+    position: relative;
+    cursor: pointer;
+}
+.nav-links>li a:hover{
+      
+      color: var(--fifth-color);
+}
+
+.bx.bx-menu{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    visibility: hidden;
+    z-index: 999;
+    color: #fff;
+    font-size: 4.1rem;
+    
+}
+
+
+
+
+.nav-links>li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color:var(--fifth-color);
+    margin: auto;
+    display: block;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.6s ease;
+
+}
+
+.nav-links>li a:hover::after{
+    width: 100%;
+ 
+   
+  
+}
+
+nav > hr{
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 10%;
+}
+.nav-links>.contact-list-btn > a {
+    background-color:var(--fifth-color);
+    color: #000;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    border-radius: 8px;
+}
+.nav-links>.contact-list-btn > a:hover::after{
+    width: 0;
+}
+.nav-links>.contact-list-btn > a:hover{
+    color: #000;
+    background-color: #e0f7ffd4;
+}
+
+
+#contact-me{
+    width: 100%;
+    height:auto;
+    background-color: var(--fifth-color);
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+.contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.contact-info{
+    margin-left: 70px;
+    line-height: 1.3; 
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+.contact-info>p{
+    text-align: center;
+    width: 60%;
+    margin-left: 10%;
+    color: var(--secondary-color);
+}
+.contact-info>h1{
+    margin-left: 25%;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+.icon-list>ul{
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+.icon-list>ul>li{
+    margin-bottom: 10px;
+    list-style: none;
+  
+}
+.bx.bxs-phone-call,.bx.bxl-linkedin-square,.bx.bxl-gmail{
+    font-size: 2rem;
+    margin-top: 46px;
+    margin-right: 10px;
+    margin-left: 20px;
+    color: var(--fourth-color);
+
+}
+.icon-list>ul>li a{
+    color: #000;
+    text-decoration: none;
+
+}
+.contact-form{
+    margin-right: 180px;
+
+
+}
+
+.input1,.input2{
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid #003366;
+    width: 400px;
+    height: 40px;
+    margin-bottom:40px ;
+}
+.input3{
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid #003366;
+    width: 400px;
+    height: 120px;
+    margin-bottom:40px ;
+}
+label{
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+.check-box{
+    display: flex;
+    margin-bottom: 20px;
+}
+.check-box>input{
+    margin-right: 20px;
+}
+.submit-btn {
+    width: 400px;
+    height: 40px;
+    background-color: #2c6e8f; 
+    color: #ffffff; 
+    border-radius: 10px;
+    margin-top: 20px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.submit-btn:hover {
+    background-color: #005A99;  
+    color: #ffffff;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;  
+}
+
+
+
+
+
+
+
+
+#footer{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 35%;
+    padding-top: 30px;
+   
+    
+   
+
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    color: #fff;
+    padding-left: 120px;
+    padding-top: 30px;
+ 
+    
+
+}
+.footer-container>.logo-2{
+ width: 200px;
+
+
+
+ 
+  
+}
+
+.btn-info{
+    color: #fff;
+    margin-left: 320px;
+    margin-top: 50px;
+}
+
+.footer-container>p{
+    font-size: 1rem;
+    margin-right: 35%;
+    text-align: center;
+    width: 290px;
+   
+  
+
+}
+.bx.bxs-up-arrow-square{
+    color: #fff;
+    font-size: 3rem;
+    margin-left: 100px;
+
+}
+.icons-wrapper{
+    margin-right: 30%;
+}
+.icons-wrapper>a{
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+   
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        gap: 20px;
+        padding-bottom: 20px;
+       
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 200px;
+        margin-left: 2%;
+      
+
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .bx.bx-menu{
+      visibility: visible;
+      padding-top: 30px;
+      font-size: 3rem;
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2rem;
+      
+
+    }
+
+    
+
+
+    #contact-me{
+        width: 100%;
+        height:auto;
+        background-color: var(--fifth-color);
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
+    .contact-wrapper{
+        display: grid;
+      
+       
+        
+       
+    }
+    .contact-info{
+ 
+        line-height: 1.3; 
+
+        font-size: 1rem;
+    }
+    .contact-info>p{
+        text-align: center;
+        width: 60%;
+        margin-left: 10%;
+    }
+    .contact-info>h1{
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+    .icon-list>ul{
+        margin-left: 10%;
+        margin-top: 20px;
+         margin-bottom: 70px;
+    }
+    .contact-form>label{
+        margin-left: 25%;
+    }
+    .icon-list>ul>li{
+        margin-bottom: 10px;
+        list-style: none;
+        
+      
+    }
+    .bx.bxs-phone-call,.bx.bxl-linkedin-square,.bx.bxl-gmail{
+        font-size: 2rem;
+        margin-top: 46px;
+        margin-right: 10px;
+        margin-left: 20px;
+   
+    
+    }
+    
+    .icon-list>ul>li a{
+        color: #000;
+        text-decoration: none;
+    
+    
+    }
+    .contact-form{
+        margin-right: 180px;
+    
+    
+    }
+    
+    .input1,.input2{
+        display: block;
+   
+        border: 2px solid #003366;
+        width: 100%;
+      margin-top: 20px;
+        margin-left: 25%;
+        margin-right: 5%;
+        height: 50px;
+        margin-bottom:40px ;
+    }
+    .input3{
+        display: block;
+        margin-bottom: 20px;
+        border: 2px solid #003366;
+        margin-left: 25%;
+        margin-right:5%;
+        margin-top: 20px;
+        width: 100%;
+        height: 120px;
+        margin-bottom:40px ;
+    }
+    .check-box{
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 25%;
+    }
+    .check-box>input{
+        margin-right: 20px;
+    }
+    .submit-btn{
+        width: 100%;
+        height: 40px;
+       
+        margin-top: 20px;
+        margin-left: 25%;
+        margin-right: 10%;
+        border-radius: 5px;
+        border-style: none;
+    }
+    
+    
+    
+
+  
+    #footer{
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+       
+        
+       
+    
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 20px;
+
+     
+        
+    
+    }  
+    .footer-container>.logo-2{
+       margin-bottom:30px ;
+     margin-top: 10px;
+       margin-left: 20%;
+       
+       
+       
+        
+         
+       }
+       .btn-info{
+        margin-left: 32%;
+        margin-top: 30px;
+        width: 36%;
+       }
+       .footer-container>p{
+        margin-bottom:30px ;
+        width: 60%;
+        margin-left:12%;
+       }
+       .footer-container>.icons-wrapper{        
+        margin-left:22%;
+       }
+       .bx.bxs-up-arrow-square{
+        margin-left: 30%;
+        font-size: 2.5rem;
+        margin-top: 30px;
+       }
+       
+       
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        gap: 20px;
+        padding-bottom: 20px;
+       
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2rem;
+      
+
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .bx.bx-menu{
+      visibility: visible;
+      padding-top: 30px;
+      font-size: 3rem;
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2rem;
+      
+
+    }
+
+    
+
+
+    #contact-me{
+        width: 100%;
+        height:auto;
+        background-color: var(--fifth-color);
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
+    .contact-wrapper{
+        display: grid;
+        
+       
+    }
+    .contact-info{
+ 
+        line-height: 1.3; 
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1rem;
+    }
+    .contact-info>p{
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .contact-info>h1{
+       text-align: center;
+       margin-right: 20%;
+    }
+    .icon-list>ul{
+        margin-left: 10%;
+        margin-top: 20px;
+         margin-bottom: 70px;
+    }
+   
+    .icon-list>ul>li{
+        margin-bottom: 10px;
+        list-style: none;
+        
+      
+    }
+    .bx.bxs-phone-call,.bx.bxl-linkedin-square,.bx.bxl-gmail{
+        font-size: 2rem;
+        margin-top: 46px;
+        margin-right: 10px;
+        margin-left: 20px;
+   
+    
+    }
+    .icon-list>ul>li a{
+        color: #000;
+        text-decoration: none;
+    
+    
+    }
+    .contact-form{
+        margin-right: 180px;
+    
+    
+    }
+    
+    .input1,.input2{
+        display: block;
+   
+        border: 2px solid #003366;
+        width: 100%;
+      margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 10%;
+        height: 50px;
+        margin-bottom:40px ;
+    }
+    .input3{
+        display: block;
+        margin-bottom: 20px;
+        border: 2px solid #003366;
+        margin-left: 15%;
+        margin-right: 10%;
+        margin-top: 20px;
+        width: 100%;
+        height: 120px;
+        margin-bottom:40px ;
+    }
+    .check-box{
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 15%;
+    }
+    .check-box>input{
+        margin-right: 20px;
+    }
+    .contact-form>label{
+        margin-left: 15%;
+    }
+    .submit-btn{
+        width: 100%;
+        height: 40px;
+        background-color: var(--fourth-color);
+        color: #fff;
+        margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 10%;
+        border-radius: 5px;
+        border-style: none;
+    }
+    
+
+  
+    #footer{
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+       
+        
+       
+    
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 20px;
+
+     
+        
+    
+    }  
+    .footer-container>.logo-2{
+       margin-bottom:30px ;
+     margin-top: 10px;
+       margin-left: 20%;
+       
+       
+       
+        
+         
+       }
+       .btn-info{
+        margin-left: 32%;
+        margin-top: 30px;
+        width: 36%;
+       }
+       .footer-container>p{
+        margin-bottom:30px ;
+        width: 60%;
+        margin-left:12%;
+       }
+       .footer-container>.icons-wrapper{        
+        margin-left:22%;
+       }
+       .bx.bxs-up-arrow-square{
+        margin-left: 30%;
+        font-size: 2.5rem;
+        margin-top: 30px;
+       }
+}
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        gap: 20px;
+        padding-bottom: 20px;
+       
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 200px;
+      
+
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .bx.bx-menu{
+      visibility: visible;
+      padding-top: 30px;
+      font-size: 3rem;
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2rem;
+      
+
+    }
+
+    
+
+
+    #contact-me{
+        width: 100%;
+        height:auto;
+        background-color: var(--fifth-color);
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
+    .contact-wrapper{
+        display: grid;
+        
+       
+    }
+    .contact-info{
+ 
+        line-height: 1.3; 
+
+        font-size: 1rem;
+    }
+    .contact-info>p{
+        text-align: center;
+        width: 60%;
+        margin-left: 10%;
+    }
+    .contact-info>h1{
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+    .icon-list>ul{
+        margin-left: 1%;
+        margin-top: 20px;
+        margin-right: 2%;
+         margin-bottom: 70px;
+         display: flex;
+         gap: 5px;
+    }
+    
+    label{
+        margin-left: 12%;
+    }
+    .icon-list>ul>li{
+        margin-bottom: 10px;
+        list-style: none;
+        
+      
+    }
+    .bx.bxs-phone-call,.bx.bxl-linkedin-square,.bx.bxl-gmail{
+        font-size: 2rem;
+        margin-top: 46px;
+        margin-right: 10px;
+        margin-left: 20px;
+   
+    
+    }
+
+  
+    .icon-list>ul>li a{
+        color: #000;
+        text-decoration: none;
+    
+    
+    }
+    .contact-form{
+        margin-right: 180px;
+    
+    
+    }
+    
+    .input1,.input2{
+        display: block;
+   
+        border: 2px solid #003366;
+        width: 100%;
+      margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 10%;
+        height: 50px;
+        margin-bottom:40px ;
+    }
+    .input3{
+        display: block;
+        margin-bottom: 20px;
+        border: 2px solid #003366;
+        margin-left: 15%;
+        margin-right: 10%;
+        margin-top: 20px;
+        width: 100%;
+        height: 120px;
+        margin-bottom:40px ;
+    }
+    .check-box{
+        display: flex;
+        margin-bottom: 20px;
+        margin-left: 15%;
+    }
+    .check-box>input{
+        margin-right: 20px;
+    }
+    .submit-btn{
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 15%;
+        margin-right: 10%;
+        border-radius: 5px;
+        border-style: none;
+    }
+    
+
+  
+    #footer{
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+       
+        
+       
+    
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 20px;
+
+     
+        
+    
+    }  
+    .footer-container>.logo-2{
+       margin-bottom:30px ;
+     margin-top: 10px;
+       margin-left: 20%;
+       
+       
+       
+        
+         
+       }
+       .btn-info{
+        margin-left: 32%;
+        margin-top: 30px;
+        width: 36%;
+       }
+       .footer-container>p{
+        margin-bottom:30px ;
+        width: 60%;
+        margin-left:12%;
+       }
+       .footer-container>.icons-wrapper{        
+        margin-left:22%;
+       }
+       .bx.bxs-up-arrow-square{
+        margin-left: 30%;
+        font-size: 2.5rem;
+        margin-top: 30px;
+       }
+       
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)  {
+   
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        gap: 20px;
+        padding-bottom: 20px;
+       
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        width: 200px;
+      
+
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .bx.bx-menu{
+      visibility: visible;
+      padding-top: 30px;
+      font-size: 3rem;
+    }
+    .logo-1{
+        margin-right: 200px;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        font-size: 2rem;
+      
+
+    }
+
+    #contact-me{
+    width: 100%;
+    height:auto;
+    background-color: var(--fifth-color);
+    padding-bottom: 200px;
+    padding-top: 230px;
+}
+.contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.contact-info{
+    
+    line-height: 1.3; 
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+.contact-info>p{
+    text-align: center;
+    width: 70%;
+    margin-left: 3%;
+    color: var(--secondary-color);
+}
+.contact-info>h1{
+    margin-left: 180px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+.icon-list>ul{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.icon-list>ul>li{
+    margin-bottom: 10px;
+    list-style: none;
+  
+}
+.bx.bxs-phone-call,.bx.bxl-linkedin-square,.bx.bxl-gmail{
+    font-size: 2rem;
+    margin-top: 46px;
+    margin-right: 10px;
+    margin-left: 20px;
+    color: var(--fourth-color);
+
+}
+.icon-list>ul>li a{
+    color: #000;
+    text-decoration: none;
+
+}
+.contact-form{
+    margin-right: 5%;
+
+
+}
+
+.input1,.input2{
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid #003366;
+    width: 400px;
+    height: 40px;
+    margin-bottom:40px ;
+}
+.input3{
+    display: block;
+    margin-bottom: 20px;
+    border: 2px solid #003366;
+    width: 400px;
+    height: 120px;
+    margin-bottom:40px ;
+}
+label{
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+.check-box{
+    display: flex;
+    margin-bottom: 20px;
+}
+.check-box>input{
+    margin-right: 20px;
+}
+.submit-btn{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-style: none;
+}
+
+
+
+    
+    #footer{
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: 58vh;
+        padding-top: 30px;
+       
+        
+       
+    
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 20px;
+     
+        
+    
+    }  
+    .footer-container>.logo-2{
+       margin-bottom:30px ;
+     margin-top: 10px;
+       margin-left: 20%;
+       
+       
+       
+        
+         
+       }
+       .btn-info{
+        margin-left: 32%;
+        margin-top: 30px;
+        width: 36%;
+       }
+       .footer-container>p{
+        margin-bottom:30px ;
+        width: 60%;
+        margin-left:12%;
+       }
+       .footer-container>.icons-wrapper{        
+        margin-left:65%;
+        display: flex;
+
+       }
+       .bx.bxs-up-arrow-square{
+        margin-left: 30%;
+        font-size: 2.5rem;
+        margin-top: 30px;
+       }
+       
+
+}
